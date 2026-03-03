@@ -21,7 +21,7 @@ const Hero = () => {
         axios.get('https://api.openweathermap.org/data/3.0/onecall',{
           params: {
               q: input,
-              appid: 'e88191f36187567a4734733ea7cf8458',
+              appid: '',
               units: 'metric'
           }
         }).then(res => {
