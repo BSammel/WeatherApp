@@ -18,7 +18,7 @@ const Hero = () => {
       if(event.key === 'Enter'){
         setInput('')
         setWeather({...weather, loading: true})
-        axios.get('https://api.openweathermap.org/data/3.0/onecall',{
+        axios.get('https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}',{
           params: {
               q: input,
               appid: 'e88191f36187567a4734733ea7cf8458',
