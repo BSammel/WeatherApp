@@ -22,7 +22,7 @@ const Hero = () => {
         axios.get('https://api.openweathermap.org/data/2.5/weather?',{
           params: {
               q: input,
-              appid: 'e88191f36187567a4734733ea7cf8458',
+              appid: import.meta.env.VITE_APP_ID,
               units: 'metric'
           }
         }).then(res => {
