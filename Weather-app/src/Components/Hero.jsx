@@ -1,6 +1,4 @@
-import axios from 'axios';
-import { section } from 'framer-motion/client'
-import { Search, Cloudy, Droplet, Wind, Rocket, Sun} from 'lucide-react'
+import axios from 'axios'
 import { useState } from 'react'
 import {Loader} from 'lucide-react'
 
@@ -22,7 +20,7 @@ const Hero = () => {
         axios.get('https://api.openweathermap.org/data/2.5/weather?',{
           params: {
               q: input,
-              appid: import.meta.env.VITE_APP_ID,
+              appid: 'e88191f36187567a4734733ea7cf8458',
               units: 'metric'
           }
         }).then(res => {
