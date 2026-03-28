@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useState } from 'react'
-import {Loader} from 'lucide-react'
+import {Loader, Search, Droplet, Wind, Rocket} from 'lucide-react'
 
 
 const Hero = () => {
@@ -84,13 +84,7 @@ const Hero = () => {
         <img src={`https://openweathermap.org/img/wn/${weather.data.weather?.[0].icon}@2x.png`} alt={weather.data.weather?.[0].description} />
         <p className='text-yellow-300 text-xl'>{weather.data.weather?.[0].description}</p>
         </div>
-         <hr style={{
-            background: 'lightgray',
-          color: 'lightgray',
-          borderColor: 'lightgray',
-          height: '2px',
-          marginTop: '5px',
-         }} />
+         
          <div className='flex items-center justify-center pt-2 space-x-4'>
             <div className='flex items-center justify-center space-x-2'>
             <Droplet className='text-blue-700 w-6 h-6' />
